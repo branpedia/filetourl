@@ -81,3 +81,40 @@ button:hover {
     margin: 15px 0;
     display: none;
 }
+
+/* Add to existing styles */
+.dragover {
+  border-color: #4f46e5 !important;
+  background-color: #f0f5ff !important;
+}
+
+.result-item.error {
+  background-color: #fee2e2;
+  border-left: 4px solid #ef4444;
+}
+
+.file-size {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 640px) {
+  .file-size {
+    margin-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  .error-message {
+    margin-left: 0;
+    width: 100%;
+  }
+}
