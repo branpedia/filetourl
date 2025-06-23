@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File to URL Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File to URL Converter</h1>
+        <p>Upload your files (images, videos, documents) and get a shareable URL</p>
+        
+        <div class="upload-area" id="upload-area">
+            <p>Click or drag files here to upload</p>
+            <input type="file" id="file-input">
+            <button id="select-file-btn">Select File</button>
+        </div>
+        
+        <div id="upload-progress" style="display: none;">
+            <p>Uploading... <span id="progress-percent">0</span>%</p>
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+        
+        <div id="result">
+            <h3>Your File URL:</h3>
+            <div id="url-result"></div>
+            <button class="copy-btn" id="copy-btn">Copy URL</button>
+            
+            <div id="preview-container">
+                <img id="image-preview" class="preview" alt="Image preview">
+                <video id="video-preview" class="preview" controls></video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
