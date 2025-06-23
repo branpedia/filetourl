@@ -1,18 +1,16 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/public/index.html"
-    },
-    {
-      "src": "/api/upload",
-      "methods": ["POST"],
-      "dest": "/api/upload.js"
-    },
-    {
-      "src": "/api/(?<file>[^/]+)",
-      "dest": "/api/[file].js"
-    }
-  ]
+  "name": "branpedia-tourl",
+  "version": "1.0.0",
+  "description": "Website upload file dan gambar",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.6.2",
+    "form-data": "^4.0.0",
+    "file-type": "^18.0.0"
+  }
 }
